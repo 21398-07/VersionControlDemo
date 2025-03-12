@@ -1,20 +1,21 @@
 from random import randint
 import time
 
-def loading_startup(text,delay=0.02):
+def loading_startup(text,delay=3):
     for letter in text:
         print(letter,end='')
         time.sleep(delay)
 
 x = randint(1,6)
 
-loading_startup('Choose a number from 1 to 6\n')
+loading_startup('Select a number from 1 to 6\n')
 
 a = int(input())
 
 print(x)
 
+
 if a == x:
-    print('Nice')
+    print('Nice man')
 else:
-    print('You lost.')
+    print('You lost bro.')
